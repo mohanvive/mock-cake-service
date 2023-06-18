@@ -24,7 +24,7 @@ type OrderItem record {
     int quantity;
 };
 
-service http:Service / on new http:Listener(9090) {
+service / on new http:Listener(9090) {
 
     function init() {
         menu["Butter Cake"] = 15;
