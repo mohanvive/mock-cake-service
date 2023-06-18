@@ -1,0 +1,9 @@
+[build-options]
+  observabilityIncluded = true
+
+[package]
+  distribution = "2201.4.1"
+  name = "cake_order_processing"
+  org = "mohanadarshanvivekanandalingam"
+  version = "0.1.0"
+
