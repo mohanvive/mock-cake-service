@@ -1,7 +1,6 @@
 import ballerina/random;
 import ballerina/http;
 
-configurable int port = 9090;
 map<status> orderStatus = {};
 map<int> menu = {};
 
@@ -25,7 +24,7 @@ type OrderItem record {
     int quantity;
 };
 
-service http:Service / on new http:Listener(port) {
+service http:Service / on new http:Listener(9090) {
 
     function init() {
         menu["Butter Cake"] = 15;
